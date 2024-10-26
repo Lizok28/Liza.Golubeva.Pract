@@ -8,6 +8,7 @@ while type(a) != float:
         print("Неправильно ввели ")
         a = input("Введите первое число: ")
 
+
 b = input("Введите второе число: ")      #Обработка искоючений
 while type(b) != float:
     try:
