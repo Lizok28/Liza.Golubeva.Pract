@@ -1,19 +1,21 @@
 #Смоделировать простейший калькулятор,
 # умеющий выполнять 4 основные арифметические операции.
-a = input("Введите первое число: ")     #Обработка искоючений
+a = input("Введите первое число: ")     #Обработка исключений
 while type(a) != float:
     try:
         a = float(a)
-    except ValueError:
+        1 / a
+    except ValueError and ZeroDivisionError:
         print("Неправильно ввели ")
         a = input("Введите первое число: ")
 
 
-b = input("Введите второе число: ")      #Обработка искоючений
+b = input("Введите второе число: ")      #Обработка исключений
 while type(b) != float:
     try:
         b = float(b)
-    except ValueError:
+        1 / b
+    except ValueError and ZeroDivisionError:
         print("Неправильно ввели")
         b = input("Введите второе число: ")
 
@@ -26,4 +28,9 @@ elif action == "-":
 elif action == "*":
     print(a * b)
 elif action == "/":
-    print(a / b)
+    if b != 0:
+        print(a / b)
+    else:
+        print("Делить на ноль нельзя")
+else:
+    action = input("Некорректная операция. Выберите операцию: (+ - * /) : ")
