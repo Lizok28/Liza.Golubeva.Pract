@@ -12,3 +12,4 @@ while type(a) != int:
 while a > 0:
     print(a % 10)
     a //= 10
+
