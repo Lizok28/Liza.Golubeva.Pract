@@ -20,6 +20,9 @@ while i < 5:
     while type(a) != int:
         try:
             a = int(a)
+            if a < 0:
+                print("Вы ввели отрицательное число")
+                a = input("Введите целое положительное число: ")
         except ValueError:
             print("Неправильно ввели")
             a = input("Введите целое положительное число: ")
