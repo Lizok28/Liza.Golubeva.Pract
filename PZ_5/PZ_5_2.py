@@ -6,23 +6,27 @@
 
 
 def InvertDigits(K):
-    inverted = ""
+    inverted = 0
     while K > 0:
         last_digit = K % 10
-        inverted += str(last_digit)
+        inverted = inverted * 10 + last_digit
         K //= 10
     return inverted
+
+
 i = 0
 
 
 while i < 5:
     a = input("Введите целое положительное число: ")
-    while type(a) != int:
+    while True:
         try:
             a = int(a)
             if a < 0:
                 print("Вы ввели отрицательное число")
                 a = input("Введите целое положительное число: ")
+                continue
+            break
         except ValueError:
             print("Неправильно ввели")
             a = input("Введите целое положительное число: ")

@@ -4,6 +4,8 @@
 
 def Symbols(S):
     print("*" * S)
+
+
 a = input("Введите целое число: ")
 while type(a) != int:
     try:
