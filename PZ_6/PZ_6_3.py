@@ -8,7 +8,7 @@ import random
 
 Spisok = []
 
-n = input("Введите размер списка: ") # размер списка (например)
+n = input("Введите размер списка: ")
 
 while type(n) != int:
     try:

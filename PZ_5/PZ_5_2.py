@@ -25,7 +25,6 @@ while i < 5:
             if a < 0:
                 print("Вы ввели отрицательное число")
                 a = input("Введите целое положительное число: ")
-                continue
             break
         except ValueError:
             print("Неправильно ввели")
