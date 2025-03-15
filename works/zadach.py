@@ -328,10 +328,75 @@ from sympy import resultant
 
 
 
-a = input()
+# a = input()
+#
+# my_dict = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five', '6': 'six', '7': 'seven', '8': 'eight', '9': 'nine'}
+# s = []
+# for i in a:
+#     s.append(my_dict[i])
+# print(" ".join(s))
 
-my_dict = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five', '6': 'six', '7': 'seven', '8': 'eight', '9': 'nine'}
-s = []
-for i in a:
-    s.append(my_dict[i])
-print(" ".join(s))
+# courses = {
+#     'CS101': ['3004', 'Хайнс', '8:00'],
+# 'CS102': ['4501','Альварадо', '9:00'],
+# 'CS103': ['6755', 'Рич', '10:00'],
+# 'NT110':  ['1244', 'Берк', '11:00'],
+# 'CM241': ['1411', 'Ли', '13:00']
+# }
+#
+# a = input()
+# d = []
+# # for i in courses:
+# if a in courses:
+#     d += courses[a]
+#
+# print(f"{a}: {", ".join(d)}")
+
+#
+# 'CS101':  '3004', 'teacher': 'Хайнс', 'time': '8:00'},
+# 'CS102':  '4501', 'teacher': 'Альварадо', 'time': '9:00'},
+# 'CS103':  '6755', 'teacher': 'Рич', 'time': '10:00'},
+# 'NT110':  '1244', 'teacher': 'Берк', 'time': '11:00'},
+# 'CM241':  '1411', 'teacher': 'Ли', 'time': '13:00'}
+
+
+
+#
+#
+# d={".":'1', ",":'11', "?":'111', "!":'1111', ":":'11111',
+#     "A":'2', "B":'22', "C":'222',
+#     "D":'3', "E":'33', "F":'333',
+#     "G":'4', "H":'44', "I":'444',
+#     "J":'5', "K":'55', "L":'555',
+#     "M":'6', "N":'66', "O":'666',
+#     "P":'7', "Q":'77', "R":'777', "S": '7777',
+#     "T":'8', "U":'88', "V":'888',
+#     "W":'9', "X":'99', "Y":'999', "Z": '9999',
+#     " ":'0'
+# }
+# a = input()
+# for i in a:
+#     if i in d:
+#         print(d[i], end="")
+
+
+# numbers = [9, 8, 32, 1, 10, 1, 10, 23, 1, 4, 10, 4, 2, 2, 2, 2, 1, 10, 1, 2, 2, 32, 23, 23]
+#
+# result = {}
+# for num in numbers:
+#     if num not in result:
+#         result[num] = 1
+#     else:
+#         result[num] += 1
+# print(result)
+
+
+
+
+
+d = 0
+r = 600
+while r < 10001:
+    r += r * 15 / 100
+    d += 1
+print(d)
